@@ -1,193 +1,58 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #111;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To Roblox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.navbar {
-    display: flex;
-    align-items: center;
-    background-color: #1a1a1a;
-    padding: 10px 20px;
-}
+<div class="navbar">
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_Logo_2022.svg" alt="Roblox Logo">
+    </div>
+    <div class="nav-links">
+        <a href="#">Charts</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Create</a>
+        <a href="#">Robux</a>
+    </div>
+    <div class="nav-search">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="nav-button">
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+</div>
 
-.logo img {
-    height: 30px;
-    margin-right: 20px;
-}
+<div class="login-container">
+    <div class="login-box">
+        <h2>Login to Roblox</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+        <p class="signup-text">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+</div>
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
+<footer>
+    <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Jobs</a>
+        <a href="#">Blog</a>
+        <a href="#">Parents</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Help</a>
+        <a href="#">Terms</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Privacy</a>
+        <a href="#">Your Privacy Choices</a>
+    </div>
+    <p>©2025 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</p>
+</footer>
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-.nav-search input {
-    margin-left: 40px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    background-color: #111;
-    color: white;
-}
-
-.nav-search input::placeholder {
-    color: #aaa;
-}
-
-.nav-button {
-    margin-left: auto;
-}
-
-.nav-button button {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.nav-button button:hover {
-    background-color: #135ec6;
-    transform: scale(1.05);
-}
-
-.content {
-    text-align: center;
-    margin: 100px 20px;
-}
-
-.content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.content p {
-    font-size: 18px;
-    color: #aaa;
-    margin-bottom: 20px;
-}
-
-.main-btn {
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-
-.main-btn:hover {
-    background-color: #135ec6;
-    transform: translateY(-3px);
-}
-
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-box {
-    background-color: #1a1a1a;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    text-align: center;
-    width: 350px;
-}
-
-.login-box h2 {
-    margin-bottom: 30px;
-    color: white;
-}
-
-.login-box input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    background-color: #333;
-    color: white;
-    font-size: 16px;
-}
-
-.login-box input::placeholder {
-    color: #aaa;
-}
-
-.login-box button {
-    width: 100%;
-    padding: 12px;
-    background-color: #1a73e8;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.login-box button:hover {
-    background-color: #135ec6;
-    transform: scale(1.05);
-}
-
-.signup-text {
-    margin-top: 20px;
-    color: #aaa;
-}
-
-.signup-text a {
-    color: #1a73e8;
-    text-decoration: none;
-}
-
-.signup-text a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-    border-top: 1px solid #333;
-}
-
-.footer-links {
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    color: #aaa;
-    font-size: 12px;
-}
+</body>
+</html>
